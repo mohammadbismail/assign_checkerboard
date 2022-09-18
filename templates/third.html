@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkboarder</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/styles2.css')}}">
+</head>
+
+<body>
+    {%for i in range(x_coor)%}
+    <div class="box">
+        {%for j in range(y_coor):%}
+        <div class="subbox1"></div>
+        <div class="subbox2"></div>
+        {%endfor%}
+    </div>
+    <div class="box">
+        {%for j in range(y_coor):%}
+        <div class="subbox2"></div>
+        <div class="subbox1"></div>
+        {%endfor%}
+    </div>
+    {% endfor %}
+
+</body>
+
+</html>

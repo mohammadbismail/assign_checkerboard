@@ -1,0 +1,18 @@
+body {
+  margin: 5% 20%;
+}
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subbox,
+.subbox2 {
+  padding: 4%;
+}
+.subbox {
+  background-color: red;
+}
+.subbox2 {
+  background-color: black;
+}
